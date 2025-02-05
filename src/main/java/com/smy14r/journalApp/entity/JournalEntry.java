@@ -1,15 +1,38 @@
 package com.smy14r.journalApp.entity;
 
-public class JournalEntry {
-    private long id;
+import org.bson.types.ObjectId;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+import java.time.LocalDateTime;
 
-    public long getId() {
+@Document(collection = "journal_entries")
+public class JournalEntry {
+
+    @Id
+    private ObjectId id;
+
+    private String title;
+
+    private String content;
+
+    private LocalDateTime date;
+
+    public LocalDateTime getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDateTime date) {
+        this.date = date;
+    }
+
+    public ObjectId getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(ObjectId id) {
         this.id = id;
     }
+
 
     public String getTitle() {
         return title;
@@ -27,7 +50,5 @@ public class JournalEntry {
         this.content = content;
     }
 
-    private String title;
 
-    private String content;
 }

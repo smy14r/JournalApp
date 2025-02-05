@@ -11,3 +11,6 @@ public class HealthCheck {
         return "Ok";
     }
 }
+
+//controller ---> service ---> repository
+

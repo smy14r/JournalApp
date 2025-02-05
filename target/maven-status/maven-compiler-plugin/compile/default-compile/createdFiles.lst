@@ -1,0 +1,6 @@
+com/smy14r/journalApp/repository/JournalEntryRepository.class
+com/smy14r/journalApp/JournalApplication.class
+com/smy14r/journalApp/controller/JournalEntryControllerV2.class
+com/smy14r/journalApp/entity/JournalEntry.class
+com/smy14r/journalApp/controller/HealthCheck.class
+com/smy14r/journalApp/service/JournalEntryService.class
